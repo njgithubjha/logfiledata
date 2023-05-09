@@ -1,6 +1,6 @@
 import re
 
-with open("server.log", "r") as f:
+with open("access.log", "r") as f:
     for line in f:
         match = re.match(r'(\S+) (\S+) (\S+) \[(.*?)\] "(.*?)" (\S+) (\S+) "(.*?)" "(.*?)"', line)
         if match is not None:
